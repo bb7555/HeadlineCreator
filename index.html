@@ -15,54 +15,55 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.1.min.js"></script>
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+  
+  
     </head>
     <body>
-    
+<div class="headline-creator">    
     
     <form name="PRODProducts" class="headline-input-form" method="post" action="http://www.personalheadlines.com/Merchant2/merchant.mvc?"><input type="hidden" name="Action" value="ADPR"><input type="hidden" name="Product_Code" value="200-001"><input type="hidden" name="Store_Code" value="PH"><input type="hidden" name="Category_Code" value="PN"><input type="hidden" name="Offset" value=""><input type="hidden" name="PRODAction" value="">
 
-
+<div class="part-1">
 
 <span class="headline-create-info">IMPORTANT NOTE: Max characters indicated for entry fields below INCLUDE letters, punctuation &amp; spaces.</span>
 
-		<input type="hidden" name="AttributeCode[1]" value="3headline"><table>
+		
+<span class="headline-create-info">Number of headlines?</span>
+
+<div class="headline-create-radio">
+<input type="radio" name="numberOfLines" id="headline_2" checked><label for="headline_2">2</label>
+
+<input type="radio" name="numberOfLines" id="headline_3"><label for="headline_3">3</label>
+</div>
 
 
+<input class="headline-input-text" placeholder="Headline 1(up to 24 characters)" type="text" name="AttributeValue[1]" value="" size="30" maxlength="26">
 
-
-
-<input placeholder="Headline 1(up to 24 characters)" type="text" name="AttributeValue[1]" value="" size="30" maxlength="26">
+		<input type="hidden" name="AttributeCode[1]" value="2headline">
+        
+<input class="headline-input-text" placeholder="Headline 2(up to 24 characters)" type="text" name="AttributeValue[2]" value="" size="30" maxlength="26">
 
 		<input type="hidden" name="AttributeCode[2]" value="2headline">
-        
-<input placeholder="Headline 2(up to 24 characters)" type="text" name="AttributeValue[2]" value="" size="30" maxlength="26">
-
-		<input type="hidden" name="AttributeCode[3]" value="2headline">
         <span class="headline-create-info">Add a custom newspaper name? ($8.00)</span>
 
-<input type="radio" name="AttributeValue[3]" value="banner_yes">
 
+<div class="headline-create-radio">
+<input type="radio" name="AttributeValue[3]" value="banner_yes" id="banner_yes"><label for="banner_yes">YES</label>
 
-
-Yes
-
-
-
-<input type="radio" name="AttributeValue[3]" value="banner_no" checked>
-
-
-
-No
+<input type="radio" name="AttributeValue[3]" value="banner_no" id="banner_no" checked><label for="banner_no">NO</label>
+</div>
 
 		<input type="hidden" name="AttributeCode[4]" value="2headline">
         
         
-<input placeholder="If yes, enter name(up to 22 letters)" type="text" name="AttributeValue[4]" value="" size="25" maxlength="22">
+<input class="headline-input-text hidden" placeholder="If yes, enter name(up to 22 letters)" type="text" name="AttributeValue[4]" value="" size="25" maxlength="22">
 
 		<input type="hidden" name="AttributeCode[5]" value="2headline">
         
-<span class="headline-create-info">Add Stars or Hearts? (NO CHARGE, if Mel has room)</span>
+<span class="headline-create-info">Add Stars or Hearts?<br /> (NO CHARGE, if Mel has room)</span>
 
+<div class="headline-input-option">
 <select name="AttributeValue[5]" value="Extras">
 <option selected="" value="NoExtras">No Thanks, don't need 'em</option>
 <option value="RedHearts">Red Hearts</option>
@@ -70,56 +71,90 @@ No
 <option value="RedStars">Red Stars</option>
 <option value="BlackStars">Black Stars</option>
 </select>
-
+</div>
 		<input type="hidden" name="AttributeCode[6]" value="2headline">
         
         <span class="headline-create-info">Write your own feature story? ($125.00)</span>
+
+
+<div class="headline-create-radio">        
+<input type="radio" name="AttributeValue[6]" value="story_yes" id="story_yes"><label for="story_yes">YES</label>
+
+<input type="radio" name="AttributeValue[6]" value="story_no" id="story_no" checked><label for="story_no">NO</label>
+</div>
+
+
+		<input type="hidden" name="AttributeCode[7]" value="2headline">
         
-<input type="radio" name="AttributeValue[6]" value="story_yes">
-
-
-Yes
-
-
-<input type="radio" name="AttributeValue[6]" value="story_no" checked>
-
-
-No
-
-
-		<input type="hidden" name="AttributeCode[7]" value="3headline">
-        
-        <span class="headline-create-info">If yes, enter your story?(up to 475 letters (NOT Words-LETTERS), including spaces - type or paste here)Available characters remaining: </span>
+        <span class="headline-create-info hidden story">Enter your story?(up to 475 letters (NOT Words-LETTERS), including spaces - type or paste here)Available characters remaining: </span>
 
 
 
-<textarea name="AttributeValue[7]" rows="10" cols="50" onkeypress="return taLimit()" onkeyup="return taCount(messageCounter)" maxlength="475" wrap="physical"></textarea>
+<textarea class="headline-input-text hidden story" name="AttributeValue[7]" rows="10" cols="50"  maxlength="475" wrap="physical"></textarea>
 
-<span class="headline-create-info">Available characters remaining:</span> 
+<span class="headline-create-info hidden story">Available characters remaining:</span> 
 
-		<input type="hidden" name="AttributeCode[8]" value="3HeadlineExecFrame">
+<button class="headline-create-button" id="continue_to_step_2" >Continue To Step 2</button>
+
+</div>
+<!--- END FIRST PART OF FORM --->
+
+<!--- BEGIN SECOND PART OF FORM --->
+
+<div class="part-2 hidden">
+
+<button class="headline-create-button" id="continue_to_step_1" >Retrun To Step 1</button>
+
+<span class="headline-create-info">Add Extras and Special Touches To Your Order</span>
+
+
+		
 <span class="headline-create-info">Gift Wrap? ($3.50)</span>
-<input type="radio" name="AttributeValue[8]" value="gift_wrap_yes">
 
-Yes
+<div class="headline-create-radio">
+<input type="radio" name="AttributeValue[8]" id="gift_wrap_yes" value="gift_wrap_yes"><label for="gift_wrap_yes">YES</label>
 
-<input type="radio" name="AttributeValue[8]" value="gift_wrap_no" checked="checked">
+<input type="radio" name="AttributeValue[8]" value="gift_wrap_no" id="gift_wrap_no" checked="checked"><label for="gift_wrap_no">NO</label>
+</div>
 
-No
 <input type="hidden" name="AttributeCount" value="8">
 
+<span class="headline-create-info">Laminated? ($20)</span>
+<div class="headline-create-radio">
+<input type="radio" id="laminated_yes" ><label for="laminated_yes">YES</label>
 
-<span class="headline-create-info">Quantity:</span> <input type="text" name="Quantity" size="2" value="1">
+<input type="radio" id="laminated_no" checked="checked"><label for="laminated_no">NO</label>
+</div>
 
-<input type="submit" value="Add to Basket"><input type="hidden" name="Screen" value="BASK">
+<span class="headline-create-info">Framed? ($40)</span>
+<div class="headline-create-radio">
+<input type="radio" id="framed_yes" ><label for="framed_yes">YES</label>
 
+<input type="radio" id="framed_no" checked="checked"><label for="framed_no">NO</label>
+</div>
+
+<span class="headline-create-info">Framed w/ 'Executive' Half-Fold? ($210)</span>
+<div class="headline-create-radio">
+<input type="radio" id="framed_ex_yes" ><label for="framed_ex_yes">YES</label>
+
+<input type="radio" id="framed_ex_no" checked="checked"><label for="framed_ex_no">NO</label>
+</div>
+
+<span class="headline-create-info">Quantity:</span> <input class="headline-input-text purchase" type="text" name="Quantity" size="2" value="1">
+
+
+<input type="submit" value="Purchase Now"><input type="hidden" name="Screen" value="BASK">
+</div>
 
 </form>
         
+</div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
+        <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
         <script src="js/plugins.js"></script>
+        <script src="js/headline.creator.js"></script>
         <script src="js/main.js"></script>
 
        

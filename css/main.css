@@ -95,7 +95,10 @@ textarea {
 
 .headline-input-form
 {
-	width:250px;	
+	width:300px;
+	margin:10px;
+	border-radius:5px;
+	border:1px solid #CCC;	
 }
 
 .headline-create-info
@@ -103,15 +106,45 @@ textarea {
 	display:block;
 	font-size:12px;
 	font-weight:bold;
+	margin:20px 10px 5px 10px;
 }
 
+.headline-input-text
+{
+	border-radius:10px;
+	line-height:150%;
+	margin:5px 10px 5px 10px;
+	border:2px solid #333;
+	background-color:#FEFEFE;
+	padding:0 0 0 5px;
+	outline:none;
+	width:255px;
+}
 
+input.purchase
+{
+	width:55px;
+}
 
+.headline-create-radio, .headline-create-button
+{
+	margin:5px 10px 5px 10px;
+}
 
+.headline-input-option
+{
+	margin:5px 10px 5px 10px;
+}
 
+.part_1
+{
+	
+}
 
-
-
+.part_2
+{
+	
+}
 
 
 
@@ -145,8 +178,7 @@ textarea {
  */
 
 .hidden {
-    display: none !important;
-    visibility: hidden;
+    display: none;
 }
 
 /*
