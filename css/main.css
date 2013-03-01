@@ -93,9 +93,17 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.headline-input-form
+{
+	width:250px;	
+}
 
-
-
+.headline-create-info
+{
+	display:block;
+	font-size:12px;
+	font-weight:bold;
+}
 
 
 

@@ -17,24 +17,111 @@
         <script src="js/vendor/modernizr-2.6.1.min.js"></script>
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
-        <![endif]-->
+    
+    
+    <form name="PRODProducts" class="headline-input-form" method="post" action="http://www.personalheadlines.com/Merchant2/merchant.mvc?"><input type="hidden" name="Action" value="ADPR"><input type="hidden" name="Product_Code" value="200-001"><input type="hidden" name="Store_Code" value="PH"><input type="hidden" name="Category_Code" value="PN"><input type="hidden" name="Offset" value=""><input type="hidden" name="PRODAction" value="">
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+
+
+<span class="headline-create-info">IMPORTANT NOTE: Max characters indicated for entry fields below INCLUDE letters, punctuation &amp; spaces.</span>
+
+		<input type="hidden" name="AttributeCode[1]" value="3headline"><table>
+
+
+
+
+
+<input placeholder="Headline 1(up to 24 characters)" type="text" name="AttributeValue[1]" value="" size="30" maxlength="26">
+
+		<input type="hidden" name="AttributeCode[2]" value="2headline">
+        
+<input placeholder="Headline 2(up to 24 characters)" type="text" name="AttributeValue[2]" value="" size="30" maxlength="26">
+
+		<input type="hidden" name="AttributeCode[3]" value="2headline">
+        <span class="headline-create-info">Add a custom newspaper name? ($8.00)</span>
+
+<input type="radio" name="AttributeValue[3]" value="banner_yes">
+
+
+
+Yes
+
+
+
+<input type="radio" name="AttributeValue[3]" value="banner_no" checked>
+
+
+
+No
+
+		<input type="hidden" name="AttributeCode[4]" value="2headline">
+        
+        
+<input placeholder="If yes, enter name(up to 22 letters)" type="text" name="AttributeValue[4]" value="" size="25" maxlength="22">
+
+		<input type="hidden" name="AttributeCode[5]" value="2headline">
+        
+<span class="headline-create-info">Add Stars or Hearts? (NO CHARGE, if Mel has room)</span>
+
+<select name="AttributeValue[5]" value="Extras">
+<option selected="" value="NoExtras">No Thanks, don't need 'em</option>
+<option value="RedHearts">Red Hearts</option>
+<option value="BlackHearts">Black Hearts</option> 
+<option value="RedStars">Red Stars</option>
+<option value="BlackStars">Black Stars</option>
+</select>
+
+		<input type="hidden" name="AttributeCode[6]" value="2headline">
+        
+        <span class="headline-create-info">Write your own feature story? ($125.00)</span>
+        
+<input type="radio" name="AttributeValue[6]" value="story_yes">
+
+
+Yes
+
+
+<input type="radio" name="AttributeValue[6]" value="story_no" checked>
+
+
+No
+
+
+		<input type="hidden" name="AttributeCode[7]" value="3headline">
+        
+        <span class="headline-create-info">If yes, enter your story?(up to 475 letters (NOT Words-LETTERS), including spaces - type or paste here)Available characters remaining: </span>
+
+
+
+<textarea name="AttributeValue[7]" rows="10" cols="50" onkeypress="return taLimit()" onkeyup="return taCount(messageCounter)" maxlength="475" wrap="physical"></textarea>
+
+<span class="headline-create-info">Available characters remaining:</span> 
+
+		<input type="hidden" name="AttributeCode[8]" value="3HeadlineExecFrame">
+<span class="headline-create-info">Gift Wrap? ($3.50)</span>
+<input type="radio" name="AttributeValue[8]" value="gift_wrap_yes">
+
+Yes
+
+<input type="radio" name="AttributeValue[8]" value="gift_wrap_no" checked="checked">
+
+No
+<input type="hidden" name="AttributeCount" value="8">
+
+
+<span class="headline-create-info">Quantity:</span> <input type="text" name="Quantity" size="2" value="1">
+
+<input type="submit" value="Add to Basket"><input type="hidden" name="Screen" value="BASK">
+
+
+</form>
+        
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
+       
     </body>
 </html>
