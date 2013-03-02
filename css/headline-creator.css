@@ -1,0 +1,100 @@
+/* ==========================================================================
+   Headline Creator Styles
+   ========================================================================== */
+
+.headline-creator
+{
+	width:960px;	
+}
+ 
+.headline-container
+{
+	width:550px;
+	height:373px;
+	display:inline-block;
+	background-image:url(../img/creator-bg.jpg);
+	margin: 0 0 50px 50px;	
+}
+
+
+.headline-input-form
+{
+	width:300px;
+	margin:10px;
+	border-radius:5px;
+	border:1px solid #CCC;	
+	display:inline-block;
+}
+
+.headline3
+{
+	display:none;	
+}
+
+.headline-create-info
+{
+	display:block;
+	font-size:12px;
+	font-weight:bold;
+	margin:20px 10px 5px 10px;
+}
+
+.headline-input-text
+{
+	border-radius:10px;
+	line-height:150%;
+	margin:5px 10px 5px 10px;
+	border:2px solid #333;
+	background-color:#FEFEFE;
+	padding:0 0 0 5px;
+	outline:none;
+	width:255px;
+}
+
+input.purchase
+{
+	width:55px;
+}
+
+.headline-create-radio, .headline-create-button
+{
+	margin:5px 10px 5px 10px;
+}
+
+.headline-input-option
+{
+	margin:5px 10px 5px 10px;
+}
+
+.loading
+{
+	background-color:#fff;
+	background-image:url(../img/loading.gif);
+	background-repeat:no-repeat;
+	color:#F00;
+	width:300px;
+	height:515px;
+	font-size:16px;
+	font-weight:bold;
+	z-index:2;
+	position:absolute;
+	border-radius:5px;
+	text-align:center;
+	opacity:0.85;	
+}
+
+.part-1
+{
+	
+}
+
+.part-2
+{
+	
+}
+
+.hidden
+{
+	display:none;
+}
+

@@ -14,6 +14,7 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/headline-creator.css">
         <script src="js/vendor/modernizr-2.6.1.min.js"></script>
         <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
   
@@ -21,9 +22,9 @@
     </head>
     <body>
 <div class="headline-creator">    
-    
+   
     <form name="PRODProducts" class="headline-input-form" method="post" action="http://www.personalheadlines.com/Merchant2/merchant.mvc?"><input type="hidden" name="Action" value="ADPR"><input type="hidden" name="Product_Code" value="200-001"><input type="hidden" name="Store_Code" value="PH"><input type="hidden" name="Category_Code" value="PN"><input type="hidden" name="Offset" value=""><input type="hidden" name="PRODAction" value="">
-
+<div class="loading">LOADING ....</div> 
 <div class="part-1">
 
 <span class="headline-create-info">IMPORTANT NOTE: Max characters indicated for entry fields below INCLUDE letters, punctuation &amp; spaces.</span>
@@ -44,20 +45,23 @@
         
 <input class="headline-input-text" placeholder="Headline 2(up to 24 characters)" type="text" name="AttributeValue[2]" value="" size="30" maxlength="26">
 
+<input class="headline-input-text headline3" placeholder="Headline 3(up to 24 characters)" type="text" name="AttributeValue[3]" value="" size="30" maxlength="26">
+
 		<input type="hidden" name="AttributeCode[2]" value="2headline">
+        
         <span class="headline-create-info">Add a custom newspaper name? ($8.00)</span>
 
 
 <div class="headline-create-radio">
-<input type="radio" name="AttributeValue[3]" value="banner_yes" id="banner_yes"><label for="banner_yes">YES</label>
+<input type="radio" name="AttributeValue[3]" value="banner_yes" id="banner_yes" /><label for="banner_yes">YES</label>
 
-<input type="radio" name="AttributeValue[3]" value="banner_no" id="banner_no" checked><label for="banner_no">NO</label>
+<input type="radio" name="AttributeValue[3]" value="banner_no" id="banner_no" checked /><label for="banner_no">NO</label>
 </div>
 
 		<input type="hidden" name="AttributeCode[4]" value="2headline">
         
         
-<input class="headline-input-text hidden" placeholder="If yes, enter name(up to 22 letters)" type="text" name="AttributeValue[4]" value="" size="25" maxlength="22">
+<input class="headline-input-text hidden" id="newspaper_banner" placeholder="Newspapaer name(up to 22 letters)" type="text" name="AttributeValue[4]" value="" size="25" maxlength="22">
 
 		<input type="hidden" name="AttributeCode[5]" value="2headline">
         
@@ -147,6 +151,9 @@
 </div>
 
 </form>
+ 
+ 
+ <div class="headline-container"></div>
         
 </div>
 
