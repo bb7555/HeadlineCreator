@@ -10,6 +10,7 @@
 	//instantiate our objects with jQuery UI methods
 	radioGroup.buttonset();
 	
+	
 	buttons
       .button()
       .click(function( event ) {

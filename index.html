@@ -21,9 +21,18 @@
   
     </head>
     <body>
+
+
 <div class="headline-creator">    
    
-    <form name="PRODProducts" class="headline-input-form" method="post" action="http://www.personalheadlines.com/Merchant2/merchant.mvc?"><input type="hidden" name="Action" value="ADPR"><input type="hidden" name="Product_Code" value="200-001"><input type="hidden" name="Store_Code" value="PH"><input type="hidden" name="Category_Code" value="PN"><input type="hidden" name="Offset" value=""><input type="hidden" name="PRODAction" value="">
+    <form name="PRODProducts" class="headline-input-form" method="post" action="http://www.personalheadlines.com/Merchant2/merchant.mvc?">
+    <input type="hidden" name="Action" value="ADPR">
+    <input type="hidden" name="Product_Code" value="200-001">
+    <input type="hidden" name="Store_Code" value="PH">
+    <input type="hidden" name="Category_Code" value="PN">
+    <input type="hidden" name="Offset" value="">
+    <input type="hidden" name="PRODAction" value="">
+ 
 <div class="loading">LOADING ....</div> 
 <div class="part-1">
 
@@ -45,7 +54,7 @@
         
 <input class="headline-input-text" placeholder="Headline 2(up to 24 characters)" type="text" name="AttributeValue[2]" value="" size="30" maxlength="26">
 
-<input class="headline-input-text headline3" placeholder="Headline 3(up to 24 characters)" type="text" name="AttributeValue[3]" value="" size="30" maxlength="26">
+<input class="headline-input-text headline3" placeholder="Headline 3(up to 24 characters)" type="text" name="AttributeValue[]" value="" size="30" maxlength="26">
 
 		<input type="hidden" name="AttributeCode[2]" value="2headline">
         
@@ -53,10 +62,11 @@
 
 
 <div class="headline-create-radio">
-<input type="radio" name="AttributeValue[3]" value="banner_yes" id="banner_yes" /><label for="banner_yes">YES</label>
+<input type="radio" name="AttributeValue[3]" value="banner_yes" id="banner_yes"><label for="banner_yes">YES</label>
 
-<input type="radio" name="AttributeValue[3]" value="banner_no" id="banner_no" checked /><label for="banner_no">NO</label>
+<input type="radio" name="AttributeValue[3]" value="banner_no" id="banner_no" checked><label for="banner_no">NO</label>
 </div>
+
 
 		<input type="hidden" name="AttributeCode[4]" value="2headline">
         
@@ -90,7 +100,7 @@
 
 		<input type="hidden" name="AttributeCode[7]" value="2headline">
         
-        <span class="headline-create-info hidden story">Enter your story?(up to 475 letters (NOT Words-LETTERS), including spaces - type or paste here)Available characters remaining: </span>
+        <span class="headline-create-info hidden story">Enter your story.(up to 475 LETTERS)</span>
 
 
 
@@ -98,7 +108,7 @@
 
 <span class="headline-create-info hidden story">Available characters remaining:</span> 
 
-<button class="headline-create-button" id="continue_to_step_2" >Continue To Step 2</button>
+<button class="headline-create-button" id="continue_to_step_2" >Purchase Now</button>
 
 </div>
 <!--- END FIRST PART OF FORM --->
@@ -107,7 +117,7 @@
 
 <div class="part-2 hidden">
 
-<button class="headline-create-button" id="continue_to_step_1" >Retrun To Step 1</button>
+<button class="headline-create-button" id="continue_to_step_1" >Edit Your Headline</button>
 
 <span class="headline-create-info">Add Extras and Special Touches To Your Order</span>
 
@@ -125,23 +135,23 @@
 
 <span class="headline-create-info">Laminated? ($20)</span>
 <div class="headline-create-radio">
-<input type="radio" id="laminated_yes" ><label for="laminated_yes">YES</label>
+<input type="radio" name="special1" id="laminated_yes" ><label for="laminated_yes">YES</label>
 
-<input type="radio" id="laminated_no" checked="checked"><label for="laminated_no">NO</label>
+<input type="radio" name="special1" id="laminated_no" checked="checked"><label for="laminated_no">NO</label>
 </div>
 
 <span class="headline-create-info">Framed? ($40)</span>
 <div class="headline-create-radio">
-<input type="radio" id="framed_yes" ><label for="framed_yes">YES</label>
+<input type="radio" name="special2" id="framed_yes" ><label for="framed_yes">YES</label>
 
-<input type="radio" id="framed_no" checked="checked"><label for="framed_no">NO</label>
+<input type="radio" name="special2" id="framed_no" checked="checked"><label for="framed_no">NO</label>
 </div>
 
 <span class="headline-create-info">Framed w/ 'Executive' Half-Fold? ($210)</span>
 <div class="headline-create-radio">
-<input type="radio" id="framed_ex_yes" ><label for="framed_ex_yes">YES</label>
+<input type="radio" name="special3" id="framed_ex_yes" ><label for="framed_ex_yes">YES</label>
 
-<input type="radio" id="framed_ex_no" checked="checked"><label for="framed_ex_no">NO</label>
+<input type="radio" name="special3" id="framed_ex_no" checked="checked"><label for="framed_ex_no">NO</label>
 </div>
 
 <span class="headline-create-info">Quantity:</span> <input class="headline-input-text purchase" type="text" name="Quantity" size="2" value="1">
@@ -156,14 +166,11 @@
  <div class="headline-container"></div>
         
 </div>
-
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
         <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/headline.creator.js"></script>
         <script src="js/main.js"></script>
-
-       
     </body>
 </html>
