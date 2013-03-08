@@ -48,13 +48,13 @@
 </div>
 
 
-<input class="headline-input-text" placeholder="Headline 1(up to 24 characters)" type="text" name="AttributeValue[1]" value="" size="30" maxlength="26">
+<input class="headline-input-text" id="hl1" placeholder="Headline 1(up to 24 characters)" type="text" name="AttributeValue[1]" value="" size="30" maxlength="26">
 
 		<input type="hidden" name="AttributeCode[1]" value="2headline">
         
-<input class="headline-input-text" placeholder="Headline 2(up to 24 characters)" type="text" name="AttributeValue[2]" value="" size="30" maxlength="26">
+<input class="headline-input-text" id="hl2" placeholder="Headline 2(up to 24 characters)" type="text" name="AttributeValue[2]" value="" size="30" maxlength="26">
 
-<input class="headline-input-text headline3" placeholder="Headline 3(up to 24 characters)" type="text" name="AttributeValue[]" value="" size="30" maxlength="26">
+<input class="headline-input-text headline3" id="hl3" placeholder="Headline 3(up to 24 characters)" type="text" name="AttributeValue[]" value="" size="30" maxlength="26">
 
 		<input type="hidden" name="AttributeCode[2]" value="2headline">
         
@@ -78,7 +78,7 @@
 <span class="headline-create-info">Add Stars or Hearts?<br /> (NO CHARGE, if Mel has room)</span>
 
 <div class="headline-input-option">
-<select name="AttributeValue[5]" value="Extras">
+<select name="AttributeValue[5]" id="specialChars" value="Extras">
 <option selected="" value="NoExtras">No Thanks, don't need 'em</option>
 <option value="RedHearts">Red Hearts</option>
 <option value="BlackHearts">Black Hearts</option> 
@@ -100,13 +100,12 @@
 
 		<input type="hidden" name="AttributeCode[7]" value="2headline">
         
-        <span class="headline-create-info hidden story">Enter your story.(up to 475 LETTERS)</span>
+        <span class="headline-create-info hidden story">Enter your story (up to 475 LETTERS)</span>
 
 
 
-<textarea class="headline-input-text hidden story" name="AttributeValue[7]" rows="10" cols="50"  maxlength="475" wrap="physical"></textarea>
+<textarea class="headline-input-text hidden story storyText" name="AttributeValue[7]" rows="10" cols="50"  maxlength="475" wrap="physical"></textarea>
 
-<span class="headline-create-info hidden story">Available characters remaining:</span> 
 
 <button class="headline-create-button" id="continue_to_step_2" >Purchase Now</button>
 
@@ -133,6 +132,8 @@
 
 <input type="hidden" name="AttributeCount" value="8">
 
+<span class="headline-create-info">You May Choose ONE of the Following:</span>
+
 <span class="headline-create-info">Laminated? ($20)</span>
 <div class="headline-create-radio">
 <input type="radio" name="special1" id="laminated_yes" ><label for="laminated_yes">YES</label>
@@ -146,15 +147,21 @@
 
 <input type="radio" name="special2" id="framed_no" checked="checked"><label for="framed_no">NO</label>
 </div>
+<div class="headline-input-option hidden frameSelect">
+<select name="" value="FrameColor">
+<option value="Black">Black Metal Frame</option>
+<option value="Blue">Blue Metal Frame</option>
+<option value="Red">Red Metal Frame</option> 
+<option value="Gold">Gold Metal Frame</option>
 
-<span class="headline-create-info">Framed w/ 'Executive' Half-Fold? ($210)</span>
-<div class="headline-create-radio">
-<input type="radio" name="special3" id="framed_ex_yes" ><label for="framed_ex_yes">YES</label>
-
-<input type="radio" name="special3" id="framed_ex_no" checked="checked"><label for="framed_ex_no">NO</label>
+</select>
+<input type="hidden" id="finalAttribute" name="" value="">
 </div>
 
-<span class="headline-create-info">Quantity:</span> <input class="headline-input-text purchase" type="text" name="Quantity" size="2" value="1">
+
+
+
+<input class="headline-input-text purchase" type="hidden" name="Quantity" size="2" value="1">
 
 
 <input type="submit" value="Purchase Now"><input type="hidden" name="Screen" value="BASK">
@@ -163,13 +170,20 @@
 </form>
  
  
- <div class="headline-container"></div>
+ <div class="headline-container">
+ <div class="banner">The Daily Globe</div>
+ <div class="headline hl1"><span class="specialChars"></span><span class="hl1text">Place Your Personal</span><span class="specialChars"></span></div>
+  <div class="headline hl2"><span class="specialChars "></span><span class="hl2text">Headlines Here!!</span><span class="specialChars "></span></div>
+   <div class="headline hl3 hidden"><span class="specialChars "></span><span class="hl3text">Third Row</span><span class="specialChars "></span></div>
+   <div class="customStory hidden">Custom Story Goes Here!</div>
+ </div>
         
 </div>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
         <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
         <script src="js/plugins.js"></script>
+        <script src="js/vendor/jquery.jqEasyCharCounter.min.js"></script>
         <script src="js/headline.creator.js"></script>
         <script src="js/main.js"></script>
     </body>

@@ -1,21 +1,99 @@
 /* ==========================================================================
    Headline Creator Styles
    ========================================================================== */
+@font-face {
+    font-family: "Cloister Black";
+    src: url('fonts/cloisterblack-webfont.eot');
+    src: url('fonts/cloisterblack-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/cloisterblack-webfont.woff') format('woff'),
+         url('fonts/cloisterblack-webfont.ttf') format('truetype'),
+         url('fonts/cloisterblack-webfont.svg#cloister_blacklight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow:700);
 
 .headline-creator
 {
-	width:960px;	
+	width:1150px;	
 }
  
 .headline-container
 {
-	width:550px;
-	height:373px;
+	width:750px;
+	height:505px;
 	display:inline-block;
 	background-image:url(../img/creator-bg.jpg);
-	margin: 0 0 50px 50px;	
+	background-repeat:repeat-y;
+	margin: 15px;
+	float: right;
+	border-left: 3px solid #000;	
 }
 
+/* HEADLINE CREATOR DISPLAY STYLES */
+
+
+.banner
+{
+	font-family: "Cloister Black";
+	font-size: 36px;
+	margin: 35px 80px 0 90px;
+	text-align:center;
+	text-transform:uppercase;
+	height:48px;
+	transform:scale(1,1.5); /* W3C */
+    -webkit-transform:scale(1,1.5); /* Safari and Chrome */
+    -moz-transform:scale(1,1.5); /* Firefox */
+    -ms-transform:scale(1,1.5); /* IE 9 */
+    -o-transform:scale(1,1.5); /* Opera */
+}
+
+.headline
+{
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size:50px;
+	text-align:center;
+	text-transform:uppercase;
+	font-weight:bold;
+	word-spacing:-2px;
+	letter-spacing:-3px;
+	transform:scale(1,2); /* W3C */
+    -webkit-transform:scale(1,2); /* Safari and Chrome */
+    -moz-transform:scale(1,2); /* Firefox */
+    -ms-transform:scale(1,2); /* IE 9 */
+    -o-transform:scale(1,2); /* Opera */
+	overflow: hidden;
+	height: 66px;
+	
+}
+
+.hl1
+{
+	margin:50px 0 0 0;	
+}
+
+.hl2
+{
+	margin:30px 0 0 0;
+}
+
+.hl3
+{
+	font-size:24px;
+	height:33px;
+	margin:20px 0 0 0;
+}
+
+.customStory
+{
+	margin: 70px 0 0 10px;
+	font-size: 12px;
+	font-weight: bold;
+	width: 550px;
+}
+
+/* HEADLINE FORM STYLES */
 
 .headline-input-form
 {
@@ -56,7 +134,7 @@ input.purchase
 	width:55px;
 }
 
-.headline-create-radio, .headline-create-button
+.headline-create-radio, .headline-create-button, [value="Purchase Now"]
 {
 	margin:5px 10px 5px 10px;
 }
@@ -93,8 +171,15 @@ input.purchase
 	
 }
 
+/* MISC GENERAL STYLES */
+
 .hidden
 {
 	display:none;
+}
+
+.red
+{
+	color:#F00;	
 }
 
